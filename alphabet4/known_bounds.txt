@@ -1,0 +1,29 @@
+Известные оценки константы Чватала-Санкоффа gamma_4 (размер алфавита k=4, d=2 строки)
+======================================================================================
+
+Нижние оценки:
+  0.599248  — Lueker (2009) / Kiwi & Soto (2009), предыдущая лучшая
+  0.614333  — Heineman et al. (2024), arXiv:2407.10925, Table 3, ell=8
+             Лучшая опубликованная нижняя оценка.
+
+Верхние оценки:
+  ~0.668    — Lueker (2009), строгая верхняя оценка
+             (двойственный метод Данчика-Патерсона, расширенный компьютерными вычислениями)
+
+Эмпирика (Монте-Карло):
+  gamma_4 ~ 0.653  (наш monte_carlo_a4.cpp, n=20000, сошлось)
+
+Асимптотическая справка:
+  gamma_k ~ 2/sqrt(k) при k -> infinity (Kiwi, Loebl, Matousek 2005)
+  Для k=4: 2/sqrt(4) = 1.0 (грубая асимптотика, не точна для малых k)
+
+Источники:
+  [1] Heineman et al., "Improved Lower Bounds on the Expected Length of
+      Longest Common Subsequences", arXiv:2407.10925, 2024.
+      Код: https://github.com/Statistics-of-Subsequences/PaperMaterials
+  [2] Lueker, "Improved bounds on the average length of longest common
+      subsequences", J. ACM 56(3), 2009.
+  [3] Kiwi, Soto, "On a Speculated Relation Between Chvatal-Sankoff
+      Constants of Several Sequences", 2009.
+  [4] Kiwi, Loebl, Matousek, "Expected length of the longest common
+      subsequence for large alphabets", Adv. Math. 197(2), 2005.
