@@ -16,8 +16,8 @@ using namespace std;
 // space = 4*2^{2N}*MAX_SH bytes
 // time = Theta(2^{2N}*MAX_SH*K)
 const int N = 12, N1 = (1<<N)-1, M = 1 << N;
-const int MAX_SH = 25; // [0...MAX_SH]
-const int K = 1e5;
+const int MAX_SH = 30; // [0...MAX_SH]
+const int K = 40000;
 
 float m[MAX_SH+1][M][M];
 float m0[M][M];
