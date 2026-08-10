@@ -1,5 +1,6 @@
-# Sandbox (local files, not for push)
-sandbox/
+# Sandbox: keep sources and reference papers, drop build output
+sandbox/cmake-build-*/
+sandbox/editor.xml
 
 # IDE
 .idea/
@@ -25,10 +26,28 @@ monte_carlo_lcs
 monte_carlo_lcs_advanced
 version_1.0
 x5
+monte_carlo_universal
+windowed_dp_universal
+quick_mc_test
+sandbox/cmake-build-debug/SK
+sandbox/cmake-build-debug/untitled2
 
-# LaTeX build artifacts
+# LaTeX build artifacts (main.bbl is kept intentionally: needed to build without bibtex)
 *.aux
 *.log
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.bcf
+*.blg
+*.run.xml
+*.toc
+*.out
+
+# Office / LibreOffice lock and temp files
+.~lock.*#
+~$*.pptx
+~$*.docx
+
+# Large external reference (public HSE methodology guide, 74 MB)
+diploma_official/Методические рекомендации*.pdf

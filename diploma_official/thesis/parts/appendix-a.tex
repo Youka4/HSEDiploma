@@ -1,0 +1,24 @@
+\begin{itemize}[leftmargin=0pt, itemindent=\parindent]
+    \item[] \textbf{LCS} (Longest Common Subsequence) --- наибольшая общая подпоследовательность.
+    \item[] \textbf{ДП} (DP) --- динамическое программирование.
+    \item[] \textbf{MC} --- метод Monte-Carlo.
+    \item[] $\sigma$ --- размер алфавита.
+    \item[] $\gamma_\sigma$ --- константа Чватала--Санкоффа для алфавита размера $\sigma$.
+    \item[] $L_n^{(\sigma)}$ --- случайная длина LCS двух независимых равномерных строк длины $n$ над алфавитом размера $\sigma$.
+    \item[] $N$ --- размер окна (look-ahead window).
+    \item[] $\mathrm{MAX\_SH}$ --- максимальный допустимый сдвиг указателей по строкам.
+    \item[] $K$ --- число итераций ДП (длина симуляции).
+    \item[] $M$ --- число валидных масок, $M = \sigma^N$.
+    \item[] $\mathrm{BITS}$ --- число бит на символ, $\mathrm{BITS} = \lceil \log_2 \sigma \rceil$.
+    \item[] $\mathrm{MASK\_BITS}$ --- битовая ширина окна, $\mathrm{MASK\_BITS} = \mathrm{BITS} \cdot N$.
+    \item[] $\mathrm{sh}$ --- текущий сдвиг между указателями двух строк, $\mathrm{sh} \in [0, \mathrm{MAX\_SH}]$.
+    \item[] $a, b$ --- маски окон первой и второй строк (целые числа в $[0, 2^{\mathrm{MASK\_BITS}})$).
+    \item[] $\Sigma_\sigma$ --- алфавит размера $\sigma$, $\Sigma_\sigma = \{0, 1, \ldots, \sigma-1\}$.
+    \item[] $\mathcal{S}$ --- множество допустимых состояний ДП, $\mathcal{S} = [0, \mathrm{MAX\_SH}] \times \mathcal{V} \times \mathcal{V}$, где $\mathcal{V}$ --- множество валидных масок.
+    \item[] $f_K(\mathrm{sh}, a, b)$ --- ДП-функция: максимальное ожидаемое число совпадений за $K$ шагов из состояния $(\mathrm{sh}, a, b)$.
+    \item[] $\pi$ --- допустимая стратегия с ограниченным обзором; $\pi^\ast$ --- оптимальная стратегия для заданного горизонта.
+    \item[] $S_T^\pi$ --- длина общей подпоследовательности, построенной стратегией $\pi$ за $T$ шагов.
+    \item[] $\gamma^\pi$ --- предел $\mathbb{E}[S_T^\pi]/T$ при $T \to \infty$ (если существует).
+    \item[] $\gamma_{\sigma, N, \mathrm{MAX\_SH}}$ --- предел $f_K(0, 0, 0)/K$ при $K \to \infty$ (теорема 3.4).
+    \item[] \textbf{AVX2} (Advanced Vector Extensions 2) --- расширение системы команд x86 для $256$-битных векторных операций.
+\end{itemize}

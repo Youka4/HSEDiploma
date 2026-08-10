@@ -1,0 +1,73 @@
+В таблице~\ref{tab:appb-runs} приведены параметры рекордных запусков с указанием времени счёта и потребления памяти. Все запуски выполнены однопоточно. Используемые ниже исполняемые файлы (\texttt{windowed\_dp}, \texttt{windowed\_dp\_universal}, \texttt{monte\_carlo\_universal}) собираются командами компиляции, приведёнными в конце настоящего приложения, из соответствующих исходных файлов открытого git-репозитория работы~\cite{ourgithub}.
+
+\begin{table}[h!]
+\caption{Параметры и характеристики рекордных запусков}
+\label{tab:appb-runs}
+\centering
+\small
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$\sigma$ & $N$ & $\mathrm{MAX\_SH}$ & $K$ & Время & Память & $\gamma_\sigma \geq$ \\
+\hline
+2  & 12 & 30 & $40\,000$ & $\approx 5$~ч  & $\approx 2$~ГБ & $0{,}79644$ \\
+3  & 5  & 25 & $3\,200$  & десятки минут & сотни МБ      & $0{,}6834$ \\
+4  & 4  & 30 & $5\,000$  & минуты         & сотни МБ      & $0{,}6230$ \\
+5  & 3  & 35 & $4\,500$  & минуты         & десятки МБ    & $0{,}5576$ \\
+6  & 3  & 35 & $3\,500$  & минуты         & десятки МБ    & $0{,}5198$ \\
+7  & 3  & 45 & $4\,000$  & минуты         & десятки МБ    & $0{,}4893$ \\
+8  & 3  & 27 & $2\,700$  & минуты         & десятки МБ    & $0{,}4626$ \\
+9  & 3  & 17 & $1\,150$  & минуты         & сотни МБ      & $0{,}4363$ \\
+10 & 3  & 13 & $720$     & минуты         & сотни МБ      & $0{,}4132$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Команды запуска}
+
+Все команды ниже запускаются из корня git-репозитория~\cite{ourgithub} после сборки соответствующих бинарников (см.\ блок «Опции компиляции»).
+
+\begin{lstlisting}[basicstyle=\small\ttfamily,language=bash,
+                   caption={Команды запуска рекордных экспериментов из корня git-репозитория~\cite{ourgithub}},
+                   label={lst:appb-run-commands}]
+# Binary alphabet, record run (N, MAX_SH, K hard-coded in src/windowed_dp.cpp):
+./windowed_dp
+
+# Universal version, CLI args: SIGMA N MAX_SH K
+./windowed_dp_universal  2  12  30  40000
+./windowed_dp_universal  3   5  25   3200
+./windowed_dp_universal  4   4  30   5000
+./windowed_dp_universal  5   3  35   4500
+./windowed_dp_universal  6   3  35   3500
+./windowed_dp_universal  7   3  45   4000
+./windowed_dp_universal  8   3  27   2700
+./windowed_dp_universal  9   3  17   1150
+./windowed_dp_universal 10   3  13    720
+
+# Monte-Carlo verification, CLI args: SIGMA n trials seed
+./monte_carlo_universal 2 10000 500 42
+\end{lstlisting}
+
+\subsection*{Опции компиляции}
+
+Пути \texttt{src/...} ниже отсчитываются от корня клонированного git-репозитория~\cite{ourgithub}.
+
+\begin{lstlisting}[basicstyle=\small\ttfamily,language=bash,
+                   caption={Опции компиляции исходников из git-репозитория~\cite{ourgithub} (пути \texttt{src/...} отсчитываются от корня клонированного репозитория)},
+                   label={lst:appb-build-commands}]
+# Apple Silicon / generic build:
+g++ -O3 -ffast-math -std=c++17 -funroll-loops               \
+    src/windowed_dp.cpp -o windowed_dp
+
+# x86_64 with AVX2 (record server runs):
+g++ -O3 -ffast-math -std=c++17 -funroll-loops               \
+    -mavx2 -mbmi -mbmi2                                     \
+    src/windowed_dp.cpp -o windowed_dp
+
+# Universal version:
+g++ -O3 -ffast-math -std=c++17 -funroll-loops -mavx2        \
+    src/windowed_dp_universal.cpp -o windowed_dp_universal
+
+# Monte-Carlo verifier:
+g++ -O2 -std=c++17                                          \
+    src/monte_carlo_universal.cpp -o monte_carlo_universal
+\end{lstlisting}

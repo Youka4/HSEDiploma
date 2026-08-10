@@ -1,0 +1,49 @@
+\documentclass{includes/Thesis}
+
+\addbibresource{parts/refs.bib}
+
+\begin{thesis}[
+    institute = ПРАВИТЕЛЬСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ\\ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ\\ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ\\НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ\\<<ВЫСШАЯ ШКОЛА ЭКОНОМИКИ>>,
+    faculty = Санкт-Петербургская школа физико-математических\\и компьютерных наук НИУ ВШЭ --- Санкт-Петербург\\Образовательная программа <<Прикладная математика и информатика>>,
+    year = 2026,
+    city = Санкт-Петербург,
+    %
+    title = Улучшенная нижняя оценка для константы Чватала--Санкоффа методом динамического программирования с окнами,
+    %
+    authorGroup = БПМ222С,
+    authorName = Д.~Е.~Юкачев,
+    %
+    academicTeacherTitle = Старший преподаватель,
+    academicTeacherName = С.~В.~Копелиович,
+    %
+    academicSupervisorTitle = {Академический руководитель\\образовательной программы\\<<Прикладная математика и информатика>>,\\Доцент, канд. техн. наук},
+    academicSupervisorName = А.~И.~Храбров,
+    %
+    isAcademic,
+    UDC = 004.421,
+    educationalProgram = 01.03.02 <<Прикладная математика и информатика>>,
+    %
+    keywordsRu = константа Чватала--Санкоффа; наибольшая общая подпоследовательность; динамическое программирование; нижние оценки; случайные строки; задача Улама; Monte-Carlo,
+    keywordsEn = Chv\'atal--Sankoff constant; longest common subsequence; dynamic programming; lower bounds; random strings; Ulam problem; Monte-Carlo,
+]
+
+    \setAbstractResource{parts/abstract-ru}{parts/abstract-en}
+
+    \setTerminologyResource{parts/terminology}
+
+    \setIntroResource{parts/intro}
+
+    \addChapter{Предметная область и обзор литературы}{parts/chapter1}
+    \addChapter{Метод оконного динамического программирования}{parts/chapter2}
+    \addChapter{Корректность и вычислительная сложность}{parts/chapter3}
+    \addChapter{Реализация и история оптимизаций}{parts/chapter4}
+    \addChapter{Численные эксперименты и верификация}{parts/chapter5}
+
+    \setConclusionResource{parts/conclusion}
+
+    \addAppendix{Список сокращений и обозначений}{parts/appendix-a}
+    \addAppendix{Параметры экспериментов}{parts/appendix-b}
+    \addAppendix{Ключевые фрагменты исходного кода}{parts/appendix-c}
+    \addAppendix{Дополнительные таблицы}{parts/appendix-d}
+
+\end{thesis}

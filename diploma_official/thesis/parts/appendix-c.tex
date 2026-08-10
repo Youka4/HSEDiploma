@@ -1,0 +1,181 @@
+В данном приложении приведены ключевые фрагменты исходного кода. Все приведённые ниже листинги --- дословные цитаты (без каких-либо изменений) из открытого git-репозитория работы~\cite{ourgithub} (\url{https://github.com/Youka4/HSEDiploma}, основная ветка), а именно из следующих файлов:
+\begin{itemize}
+    \item \texttt{src/windowed\_dp.cpp} --- специализированная (бинарная) версия оконного ДП;
+    \item \texttt{src/windowed\_dp\_universal.cpp} --- универсальная версия для произвольного $\sigma \geq 2$;
+    \item \texttt{src/monte\_carlo\_universal.cpp} --- независимая Monte-Carlo верификация классическим ДП-LCS.
+\end{itemize}
+Номера строк в листингах не соответствуют номерам строк в исходных файлах; для удобства показаны порядковые номера в пределах листинга.
+
+\subsection*{Ядро ДП для бинарного алфавита (\texttt{windowed\_dp.cpp})}
+
+\begin{lstlisting}[language=c++,basicstyle=\footnotesize\ttfamily,numbers=left,caption={Ядро ДП для бинарного алфавита (дословно из файла \texttt{src/windowed\_dp.cpp} репозитория~\cite{ourgithub})},label={lst:wdp-binary}]
+#pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math")
+#pragma GCC target("tune=native")
+#pragma GCC target("avx2")
+
+#include <iostream>
+using namespace std;
+#define forn(i, n) for (int i = 0; i < (int)(n); i++)
+
+const int N = 12, N1 = (1<<N)-1, M = 1 << N;
+const int MAX_SH = 30;       // [0...MAX_SH]
+const int K = 40000;
+
+float m[MAX_SH+1][M][M];
+float m0[M][M];
+float m1[M][M];
+
+int bit(int x, int i) { return (x >> i) & 1; }
+
+int main() {
+    for (int L = 1; L <= K; L++) {
+        memcpy(m0, m[1], sizeof(m0));
+        for (int sh = MAX_SH; sh >= 0; sh--) {
+            memcpy(m1, m[sh], sizeof(m1));
+            forn(ma, 1 << N)
+                forn(mb, 1 << N) {
+                    float sum = 0;
+                    int cnt = 0;
+                    forn(a0, 2)
+                        forn(b0, 2) {
+                            int ma1 = ma + (a0 << N);
+                            int mb1 = mb + (b0 << N);
+                            cnt += 1;
+                            if (bit(ma1, 0) == bit(mb1, 0))
+                                sum += 1 + m1[ma1 >> 1][mb1 >> 1];
+                            else {
+                                float fa, fb = 0;
+                                if (sh != 0)
+                                    fa = m[sh-1][ma1 >> 1][mb1 & N1];
+                                else
+                                    fa = m0[mb1 & N1][ma1 >> 1];
+                                if (sh < MAX_SH)
+                                    fb = m[sh+1][ma1 & N1][mb1 >> 1];
+                                else
+                                    fb = m1[ma1 >> 1][mb1 >> 1];
+                                sum += max(fa, fb);
+                            }
+                        }
+                    m[sh][ma][mb] = sum / cnt;
+                }
+        }
+    }
+    // Final averaging over initial state (sh=0, ma=mb=0 in record run):
+    float sum = 0, cnt = 0;
+    forn(ma, 1 << N) forn(mb, 1 << N) { sum += m[0][ma][mb]; cnt += 1; }
+    printf("%.10f [N=%d, SH=%d, K=%d]\n",
+           (double)sum / cnt / (K + MAX_SH), N, MAX_SH, K);
+}
+\end{lstlisting}
+
+\subsection*{Универсальная версия для произвольного $\sigma$ (\texttt{windowed\_dp\_universal.cpp})}
+
+Принцип: символ кодируется $\mathrm{BITS} = \lceil \log_2 \sigma \rceil$ битами; список валидных масок (тех, у которых все блоки $<\sigma$) строится один раз, и ДП итерирует только по парам валидных масок. Это даёт выигрыш по времени до $\sigma^{2N}/M^2 = (\sigma/2^{\mathrm{BITS}})^{2N}$ в случае, когда $\sigma$ не является степенью двойки.
+
+\begin{lstlisting}[language=c++,basicstyle=\footnotesize\ttfamily,numbers=left,caption={Универсальная версия: предвычисление валидных масок (дословно из файла \texttt{src/windowed\_dp\_universal.cpp} репозитория~\cite{ourgithub})},label={lst:wdp-universal-masks}]
+// Compute BITS = ceil(log2(SIGMA))
+BITS = 1;
+while ((1 << BITS) < SIGMA) BITS++;
+
+MASK_BITS = BITS * N_WIN;
+M         = 1 << MASK_BITS;
+SYM_MASK  = (1 << BITS) - 1;
+FULL_MASK = M - 1;
+
+// Precompute valid masks (all symbols < SIGMA)
+vector<int> valid_masks;
+bool is_power_of_2 = (SIGMA & (SIGMA - 1)) == 0;
+if (is_power_of_2) {
+    valid_masks.resize(M);
+    forn(i, M) valid_masks[i] = i;
+} else {
+    for (int m = 0; m < M; m++) {
+        bool ok = true;
+        for (int p = 0; p < N_WIN; p++) {
+            int sym = (m >> (BITS * p)) & SYM_MASK;
+            if (sym >= SIGMA) { ok = false; break; }
+        }
+        if (ok) valid_masks.push_back(m);
+    }
+}
+int VM = valid_masks.size();
+\end{lstlisting}
+
+\begin{lstlisting}[language=c++,basicstyle=\footnotesize\ttfamily,numbers=left,caption={Универсальная версия: главный цикл ДП по валидным маскам (дословно из файла \texttt{src/windowed\_dp\_universal.cpp} репозитория~\cite{ourgithub})},label={lst:wdp-universal-loop}]
+for (int L = 1; L <= K; L++) {
+    memcpy(dp0, dp + (long long)1 * M * M,
+           (long long)M * M * sizeof(float));
+
+    for (int sh = MAX_SH; sh >= 0; sh--) {
+        memcpy(dp1, dp + (long long)sh * M * M,
+               (long long)M * M * sizeof(float));
+
+        for (int ia = 0; ia < VM; ia++) {
+            int ma = valid_masks[ia];
+            for (int ib = 0; ib < VM; ib++) {
+                int mb = valid_masks[ib];
+
+                float sum = 0;
+                int cnt = 0;
+
+                forn(a0, SIGMA)
+                    forn(b0, SIGMA) {
+                        int ma1 = (ma >> BITS)
+                                | (a0 << (MASK_BITS - BITS));
+                        int mb1 = (mb >> BITS)
+                                | (b0 << (MASK_BITS - BITS));
+                        cnt += 1;
+
+                        if ((ma & SYM_MASK) == (mb & SYM_MASK)) {
+                            sum += 1 + D1(ma1, mb1);
+                        } else {
+                            float fa, fb = 0;
+                            if (sh != 0)
+                                fa = D(sh - 1, ma1, mb & FULL_MASK);
+                            else
+                                fa = D0(mb & FULL_MASK, ma1);
+                            if (sh < MAX_SH)
+                                fb = D(sh + 1, ma & FULL_MASK, mb1);
+                            else
+                                fb = D1(ma1, mb1);
+                            sum += max(fa, fb);
+                        }
+                    }
+                D(sh, ma, mb) = sum / cnt;
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection*{Monte-Carlo верификация (\texttt{monte\_carlo\_universal.cpp})}
+
+Стандартный ДП-LCS на парах независимых равномерных строк длины $n$. Память $O(n)$ за счёт хранения только двух строк ДП-таблицы.
+
+\begin{lstlisting}[language=c++,basicstyle=\footnotesize\ttfamily,numbers=left,caption={Monte-Carlo верификация: классический ДП-LCS (дословно из файла \texttt{src/monte\_carlo\_universal.cpp} репозитория~\cite{ourgithub})},label={lst:mc-lcs}]
+int lcs_length(const std::vector<int>& a, const std::vector<int>& b) {
+    int n = (int)a.size(), m = (int)b.size();
+    std::vector<int> prev(m + 1, 0), curr(m + 1, 0);
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j <= m; ++j) {
+            if (a[i-1] == b[j-1]) curr[j] = prev[j-1] + 1;
+            else                  curr[j] = std::max(prev[j], curr[j-1]);
+        }
+        std::swap(prev, curr);
+    }
+    return prev[m];
+}
+
+double monte_carlo(int sigma, int n, int trials, uint64_t seed) {
+    std::mt19937_64 rng(seed);
+    std::uniform_int_distribution<int> dist(0, sigma - 1);
+    long long total = 0;
+    for (int t = 0; t < trials; ++t) {
+        std::vector<int> A(n), B(n);
+        for (int i = 0; i < n; ++i) A[i] = dist(rng);
+        for (int i = 0; i < n; ++i) B[i] = dist(rng);
+        total += lcs_length(A, B);
+    }
+    return double(total) / (double(trials) * double(n));
+}
+\end{lstlisting}
