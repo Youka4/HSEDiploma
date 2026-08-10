@@ -1,0 +1,969 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{wagner1974}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c47a4a4b4a1e8db7c1eff810e060bc5e}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=862884edbc7e088e2d74e7d00be63302}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4af06406322bff763827a66173056c20}
+      \strng{fullhash}{4af06406322bff763827a66173056c20}
+      \strng{fullhashraw}{4af06406322bff763827a66173056c20}
+      \strng{bibnamehash}{4af06406322bff763827a66173056c20}
+      \strng{authorbibnamehash}{4af06406322bff763827a66173056c20}
+      \strng{authornamehash}{4af06406322bff763827a66173056c20}
+      \strng{authorfullhash}{4af06406322bff763827a66173056c20}
+      \strng{authorfullhashraw}{4af06406322bff763827a66173056c20}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{21}
+      \field{journaltitle}{Journal of the ACM}
+      \field{title}{The string-to-string correction problem}
+      \field{year}{1974}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{168\bibrangedash 173}
+      \range{pages}{6}
+      \field{volume}{21}
+      \range{volume}{1}
+    \endentry
+    \entry{chvatal1975}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ce0039288011d6fb178612b0a6f7b47e}{%
+           family={Chvátal},
+           familyi={C\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=1646d539ebf323a745a98276953a6a6b}{%
+           family={Sankoff},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{4e70832900000462520c1dd3b406937e}
+      \strng{fullhash}{4e70832900000462520c1dd3b406937e}
+      \strng{fullhashraw}{4e70832900000462520c1dd3b406937e}
+      \strng{bibnamehash}{4e70832900000462520c1dd3b406937e}
+      \strng{authorbibnamehash}{4e70832900000462520c1dd3b406937e}
+      \strng{authornamehash}{4e70832900000462520c1dd3b406937e}
+      \strng{authorfullhash}{4e70832900000462520c1dd3b406937e}
+      \strng{authorfullhashraw}{4e70832900000462520c1dd3b406937e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Journal of Applied Probability}
+      \field{title}{Longest common subsequences of two random sequences}
+      \field{year}{1975}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{306\bibrangedash 315}
+      \range{pages}{10}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
+    \entry{lueker2009}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=611490868cc03bc4befc645cf064ceff}{%
+           family={Lueker},
+           familyi={L\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \strng{bibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorbibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authornamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{56}
+      \field{journaltitle}{Journal of the ACM}
+      \field{title}{Improved bounds on the average length of longest common subsequences}
+      \field{year}{2009}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{Article 17\bibrangessep 1\bibrangedash 38}
+      \range{pages}{-1}
+      \field{volume}{56}
+      \range{volume}{1}
+    \endentry
+    \entry{heineman2024}{misc}{useauthor=false}{}
+      \true{moreauthor}
+      \name{author}{6}{}{%
+        {{hash=76da88ec0665abd9e8ce1684fe450e02}{%
+           family={Heineman},
+           familyi={H\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=cc4aadc875d7abdbaf96dfa4a83d8b77}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=cc0a2fe5de89b454091575686b5654d1}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fa1878863dd862272b0592483947e0cf}{%
+           family={Gomon},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=95adaf632f96fdcc33d144fd5e443a00}{%
+           family={Lerner},
+           familyi={L\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=53c32246d8339dea0134e370e4fc3a30}{%
+           family={Dittamo},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{b4486632fa5970f8244aff7aa2ecb45a}
+      \strng{authornamehash}{b4486632fa5970f8244aff7aa2ecb45a}
+      \strng{authorfullhash}{70c383953e45b524883ef6e07e33dec1}
+      \strng{authorfullhashraw}{70c383953e45b524883ef6e07e33dec1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{arXiv:2407.10925}
+      \field{title}{Improved Lower Bounds on the Expected Length of Longest Common Subsequences}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2407.10925
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2407.10925
+      \endverb
+    \endentry
+    \entry{fekete1923}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4db23871579c7329a2f974a8ba11eb36}{%
+           family={Fekete},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{fullhash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{fullhashraw}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{bibnamehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authorbibnamehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authornamehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authorfullhash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authorfullhashraw}{4db23871579c7329a2f974a8ba11eb36}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{17}
+      \field{journaltitle}{Mathematische Zeitschrift}
+      \field{title}{Über die Verteilung der Wurzeln bei gewissen algebraischen Gleichungen mit ganzzahligen Koeffizienten}
+      \field{year}{1923}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{228\bibrangedash 249}
+      \range{pages}{22}
+      \field{volume}{17}
+      \range{volume}{1}
+    \endentry
+    \entry{steele1986}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7d0a0ebbff7d1dbff04042f37e628690}{%
+           family={Steele},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{fullhash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{fullhashraw}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{bibnamehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authorbibnamehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authornamehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authorfullhash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authorfullhashraw}{7d0a0ebbff7d1dbff04042f37e628690}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{14}
+      \field{journaltitle}{Annals of Statistics}
+      \field{title}{An Efron--Stein inequality for nonsymmetric statistics}
+      \field{year}{1986}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{753\bibrangedash 758}
+      \range{pages}{6}
+      \field{volume}{14}
+      \range{volume}{1}
+    \endentry
+    \entry{vershik1977}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8df0244e753fbf966683e3fb46b17d39}{%
+           family={Vershik},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b4eae7679a8311d0ddb31e76398bbd23}{%
+           family={Kerov},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{fullhash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{fullhashraw}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{bibnamehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authorbibnamehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authornamehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authorfullhash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authorfullhashraw}{ef0b0dab8b859eec314ac9e2824074e9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{18}
+      \field{journaltitle}{Soviet Mathematics Doklady}
+      \field{title}{Asymptotics of the {P}lancherel measure of the symmetric group and the limiting form of {Y}oung tableaux}
+      \field{year}{1977}
+      \field{pages}{527\bibrangedash 531}
+      \range{pages}{5}
+      \field{volume}{18}
+      \range{volume}{1}
+    \endentry
+    \entry{loganshepp1977}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=eee253f16d1b4af1d57b148a3ccad69d}{%
+           family={Logan},
+           familyi={L\bibinitperiod},
+           given={B.\bibnamedelimi F.},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=5e7990bac27b0f8fd715badec8e9acf3}{%
+           family={Shepp},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{fullhash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{fullhashraw}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{bibnamehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authorbibnamehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authornamehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authorfullhash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authorfullhashraw}{6ad63dfc787acba27665cf2a4bad826b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{26}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{title}{A variational problem for random {Y}oung tableaux}
+      \field{year}{1977}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{206\bibrangedash 222}
+      \range{pages}{17}
+      \field{volume}{26}
+      \range{volume}{1}
+    \endentry
+    \entry{baikdeiftjohansson1999}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=40fe895cf098e7563ac17fd7b10c9db6}{%
+           family={Baik},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bb95ea1f81a62d1ab724af5967f7568f}{%
+           family={Deift},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=48e7fe134e69d3f81180d0b7b09029b2}{%
+           family={Johansson},
+           familyi={J\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1e9744905658559858da09de0c3d975}
+      \strng{fullhash}{d1e9744905658559858da09de0c3d975}
+      \strng{fullhashraw}{d1e9744905658559858da09de0c3d975}
+      \strng{bibnamehash}{d1e9744905658559858da09de0c3d975}
+      \strng{authorbibnamehash}{d1e9744905658559858da09de0c3d975}
+      \strng{authornamehash}{d1e9744905658559858da09de0c3d975}
+      \strng{authorfullhash}{d1e9744905658559858da09de0c3d975}
+      \strng{authorfullhashraw}{d1e9744905658559858da09de0c3d975}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Journal of the American Mathematical Society}
+      \field{title}{On the distribution of the length of the longest increasing subsequence of random permutations}
+      \field{year}{1999}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{1119\bibrangedash 1178}
+      \range{pages}{60}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
+    \entry{kiwi2005}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a0743fef7bec9288dacd71476b2d8ea1}{%
+           family={Kiwi},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3a42fe7e2d7d66f8e56b6337515f44be}{%
+           family={Loebl},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3bf904d86b1c8ba52e4fdc4a6c3bd222}{%
+           family={Matoušek},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{fullhash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{fullhashraw}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{bibnamehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authorbibnamehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authornamehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authorfullhash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authorfullhashraw}{dc10ee2c8864def6cc320420fff100e6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{197}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{title}{Expected length of the longest common subsequence for large alphabets}
+      \field{year}{2005}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{480\bibrangedash 498}
+      \range{pages}{19}
+      \field{volume}{197}
+      \range{volume}{1}
+    \endentry
+    \entry{dancik1995}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=3da0f582523fca680b7f7752eb6c5e5c}{%
+           family={Dančík},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d1b67108cec2c85ae88ca16a0ccb95ba}{%
+           family={Paterson},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{fullhash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{fullhashraw}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{bibnamehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authorbibnamehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authornamehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authorfullhash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authorfullhashraw}{7dc398f51d7a71542d37d9cd7bceba73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{6}
+      \field{journaltitle}{Random Structures and Algorithms}
+      \field{title}{Upper bounds for the expected length of a longest common subsequence of two binary sequences}
+      \field{year}{1995}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{449\bibrangedash 458}
+      \range{pages}{10}
+      \field{volume}{6}
+      \range{volume}{1}
+    \endentry
+    \entry{lueker2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=611490868cc03bc4befc645cf064ceff}{%
+           family={Lueker},
+           familyi={L\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \strng{bibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorbibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authornamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the fourteenth annual ACM-SIAM symposium on Discrete algorithms (SODA)}
+      \field{title}{Improved bounds on the average length of longest common subsequences}
+      \field{year}{2003}
+      \field{pages}{130\bibrangedash 131}
+      \range{pages}{2}
+    \endentry
+    \entry{ourgithub}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f306eb3aa4a9f0c574828d3ed039f0e9}{%
+           family={Юкачев},
+           familyi={Ю\bibinitperiod},
+           given={Д.\bibnamedelimi Е.},
+           giveni={Д\bibinitperiod\bibinitdelim Е\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{fullhash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{fullhashraw}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{bibnamehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authorbibnamehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authornamehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authorfullhash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authorfullhashraw}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{media}{eresource}
+      \field{title}{HSEDiploma: реализация оконного ДП для константы Чватала--Санкоффа}
+      \field{urlday}{19}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/Youka4/HSEDiploma
+      \endverb
+      \verb{url}
+      \verb https://github.com/Youka4/HSEDiploma
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{baikdeiftjohansson1999}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=40fe895cf098e7563ac17fd7b10c9db6}{%
+           family={Baik},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bb95ea1f81a62d1ab724af5967f7568f}{%
+           family={Deift},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=48e7fe134e69d3f81180d0b7b09029b2}{%
+           family={Johansson},
+           familyi={J\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1e9744905658559858da09de0c3d975}
+      \strng{fullhash}{d1e9744905658559858da09de0c3d975}
+      \strng{fullhashraw}{d1e9744905658559858da09de0c3d975}
+      \strng{bibnamehash}{d1e9744905658559858da09de0c3d975}
+      \strng{authorbibnamehash}{d1e9744905658559858da09de0c3d975}
+      \strng{authornamehash}{d1e9744905658559858da09de0c3d975}
+      \strng{authorfullhash}{d1e9744905658559858da09de0c3d975}
+      \strng{authorfullhashraw}{d1e9744905658559858da09de0c3d975}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Journal of the American Mathematical Society}
+      \field{title}{On the distribution of the length of the longest increasing subsequence of random permutations}
+      \field{year}{1999}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{1119\bibrangedash 1178}
+      \range{pages}{60}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
+    \entry{chvatal1975}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ce0039288011d6fb178612b0a6f7b47e}{%
+           family={Chvátal},
+           familyi={C\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=1646d539ebf323a745a98276953a6a6b}{%
+           family={Sankoff},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{4e70832900000462520c1dd3b406937e}
+      \strng{fullhash}{4e70832900000462520c1dd3b406937e}
+      \strng{fullhashraw}{4e70832900000462520c1dd3b406937e}
+      \strng{bibnamehash}{4e70832900000462520c1dd3b406937e}
+      \strng{authorbibnamehash}{4e70832900000462520c1dd3b406937e}
+      \strng{authornamehash}{4e70832900000462520c1dd3b406937e}
+      \strng{authorfullhash}{4e70832900000462520c1dd3b406937e}
+      \strng{authorfullhashraw}{4e70832900000462520c1dd3b406937e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Journal of Applied Probability}
+      \field{title}{Longest common subsequences of two random sequences}
+      \field{year}{1975}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{306\bibrangedash 315}
+      \range{pages}{10}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
+    \entry{dancik1995}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=3da0f582523fca680b7f7752eb6c5e5c}{%
+           family={Dančík},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d1b67108cec2c85ae88ca16a0ccb95ba}{%
+           family={Paterson},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{fullhash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{fullhashraw}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{bibnamehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authorbibnamehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authornamehash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authorfullhash}{7dc398f51d7a71542d37d9cd7bceba73}
+      \strng{authorfullhashraw}{7dc398f51d7a71542d37d9cd7bceba73}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{6}
+      \field{journaltitle}{Random Structures and Algorithms}
+      \field{title}{Upper bounds for the expected length of a longest common subsequence of two binary sequences}
+      \field{year}{1995}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{449\bibrangedash 458}
+      \range{pages}{10}
+      \field{volume}{6}
+      \range{volume}{1}
+    \endentry
+    \entry{fekete1923}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4db23871579c7329a2f974a8ba11eb36}{%
+           family={Fekete},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{fullhash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{fullhashraw}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{bibnamehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authorbibnamehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authornamehash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authorfullhash}{4db23871579c7329a2f974a8ba11eb36}
+      \strng{authorfullhashraw}{4db23871579c7329a2f974a8ba11eb36}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{17}
+      \field{journaltitle}{Mathematische Zeitschrift}
+      \field{title}{Über die Verteilung der Wurzeln bei gewissen algebraischen Gleichungen mit ganzzahligen Koeffizienten}
+      \field{year}{1923}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{228\bibrangedash 249}
+      \range{pages}{22}
+      \field{volume}{17}
+      \range{volume}{1}
+    \endentry
+    \entry{heineman2024}{misc}{useauthor=false}{}
+      \true{moreauthor}
+      \name{author}{6}{}{%
+        {{hash=76da88ec0665abd9e8ce1684fe450e02}{%
+           family={Heineman},
+           familyi={H\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=cc4aadc875d7abdbaf96dfa4a83d8b77}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=cc0a2fe5de89b454091575686b5654d1}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fa1878863dd862272b0592483947e0cf}{%
+           family={Gomon},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=95adaf632f96fdcc33d144fd5e443a00}{%
+           family={Lerner},
+           familyi={L\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=53c32246d8339dea0134e370e4fc3a30}{%
+           family={Dittamo},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{b4486632fa5970f8244aff7aa2ecb45a}
+      \strng{authornamehash}{b4486632fa5970f8244aff7aa2ecb45a}
+      \strng{authorfullhash}{70c383953e45b524883ef6e07e33dec1}
+      \strng{authorfullhashraw}{70c383953e45b524883ef6e07e33dec1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{arXiv:2407.10925}
+      \field{title}{Improved Lower Bounds on the Expected Length of Longest Common Subsequences}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2407.10925
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2407.10925
+      \endverb
+    \endentry
+    \entry{kiwi2005}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a0743fef7bec9288dacd71476b2d8ea1}{%
+           family={Kiwi},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3a42fe7e2d7d66f8e56b6337515f44be}{%
+           family={Loebl},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3bf904d86b1c8ba52e4fdc4a6c3bd222}{%
+           family={Matoušek},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{fullhash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{fullhashraw}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{bibnamehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authorbibnamehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authornamehash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authorfullhash}{dc10ee2c8864def6cc320420fff100e6}
+      \strng{authorfullhashraw}{dc10ee2c8864def6cc320420fff100e6}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{197}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{title}{Expected length of the longest common subsequence for large alphabets}
+      \field{year}{2005}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{480\bibrangedash 498}
+      \range{pages}{19}
+      \field{volume}{197}
+      \range{volume}{1}
+    \endentry
+    \entry{loganshepp1977}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=eee253f16d1b4af1d57b148a3ccad69d}{%
+           family={Logan},
+           familyi={L\bibinitperiod},
+           given={B.\bibnamedelimi F.},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=5e7990bac27b0f8fd715badec8e9acf3}{%
+           family={Shepp},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{fullhash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{fullhashraw}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{bibnamehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authorbibnamehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authornamehash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authorfullhash}{6ad63dfc787acba27665cf2a4bad826b}
+      \strng{authorfullhashraw}{6ad63dfc787acba27665cf2a4bad826b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{26}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{title}{A variational problem for random {Y}oung tableaux}
+      \field{year}{1977}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{206\bibrangedash 222}
+      \range{pages}{17}
+      \field{volume}{26}
+      \range{volume}{1}
+    \endentry
+    \entry{lueker2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=611490868cc03bc4befc645cf064ceff}{%
+           family={Lueker},
+           familyi={L\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \strng{bibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorbibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authornamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the fourteenth annual ACM-SIAM symposium on Discrete algorithms (SODA)}
+      \field{title}{Improved bounds on the average length of longest common subsequences}
+      \field{year}{2003}
+      \field{pages}{130\bibrangedash 131}
+      \range{pages}{2}
+    \endentry
+    \entry{lueker2009}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=611490868cc03bc4befc645cf064ceff}{%
+           family={Lueker},
+           familyi={L\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{fullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \strng{bibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorbibnamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authornamehash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhash}{611490868cc03bc4befc645cf064ceff}
+      \strng{authorfullhashraw}{611490868cc03bc4befc645cf064ceff}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{56}
+      \field{journaltitle}{Journal of the ACM}
+      \field{title}{Improved bounds on the average length of longest common subsequences}
+      \field{year}{2009}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{Article 17\bibrangessep 1\bibrangedash 38}
+      \range{pages}{-1}
+      \field{volume}{56}
+      \range{volume}{1}
+    \endentry
+    \entry{steele1986}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7d0a0ebbff7d1dbff04042f37e628690}{%
+           family={Steele},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{fullhash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{fullhashraw}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{bibnamehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authorbibnamehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authornamehash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authorfullhash}{7d0a0ebbff7d1dbff04042f37e628690}
+      \strng{authorfullhashraw}{7d0a0ebbff7d1dbff04042f37e628690}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{14}
+      \field{journaltitle}{Annals of Statistics}
+      \field{title}{An Efron--Stein inequality for nonsymmetric statistics}
+      \field{year}{1986}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{753\bibrangedash 758}
+      \range{pages}{6}
+      \field{volume}{14}
+      \range{volume}{1}
+    \endentry
+    \entry{vershik1977}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8df0244e753fbf966683e3fb46b17d39}{%
+           family={Vershik},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b4eae7679a8311d0ddb31e76398bbd23}{%
+           family={Kerov},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{fullhash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{fullhashraw}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{bibnamehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authorbibnamehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authornamehash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authorfullhash}{ef0b0dab8b859eec314ac9e2824074e9}
+      \strng{authorfullhashraw}{ef0b0dab8b859eec314ac9e2824074e9}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{18}
+      \field{journaltitle}{Soviet Mathematics Doklady}
+      \field{title}{Asymptotics of the {P}lancherel measure of the symmetric group and the limiting form of {Y}oung tableaux}
+      \field{year}{1977}
+      \field{pages}{527\bibrangedash 531}
+      \range{pages}{5}
+      \field{volume}{18}
+      \range{volume}{1}
+    \endentry
+    \entry{wagner1974}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c47a4a4b4a1e8db7c1eff810e060bc5e}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=862884edbc7e088e2d74e7d00be63302}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4af06406322bff763827a66173056c20}
+      \strng{fullhash}{4af06406322bff763827a66173056c20}
+      \strng{fullhashraw}{4af06406322bff763827a66173056c20}
+      \strng{bibnamehash}{4af06406322bff763827a66173056c20}
+      \strng{authorbibnamehash}{4af06406322bff763827a66173056c20}
+      \strng{authornamehash}{4af06406322bff763827a66173056c20}
+      \strng{authorfullhash}{4af06406322bff763827a66173056c20}
+      \strng{authorfullhashraw}{4af06406322bff763827a66173056c20}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{21}
+      \field{journaltitle}{Journal of the ACM}
+      \field{title}{The string-to-string correction problem}
+      \field{year}{1974}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{168\bibrangedash 173}
+      \range{pages}{6}
+      \field{volume}{21}
+      \range{volume}{1}
+    \endentry
+    \entry{ourgithub}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f306eb3aa4a9f0c574828d3ed039f0e9}{%
+           family={Юкачев},
+           familyi={Ю\bibinitperiod},
+           given={Д.\bibnamedelimi Е.},
+           giveni={Д\bibinitperiod\bibinitdelim Е\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{fullhash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{fullhashraw}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{bibnamehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authorbibnamehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authornamehash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authorfullhash}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \strng{authorfullhashraw}{f306eb3aa4a9f0c574828d3ed039f0e9}
+      \field{sortinit}{Ю}
+      \field{sortinithash}{18aa9b94454966a5065fd1c052d09095}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{media}{eresource}
+      \field{title}{HSEDiploma: реализация оконного ДП для константы Чватала--Санкоффа}
+      \field{urlday}{19}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/Youka4/HSEDiploma
+      \endverb
+      \verb{url}
+      \verb https://github.com/Youka4/HSEDiploma
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
