@@ -1,0 +1,8 @@
+Нужно подготовить финальную презентацию и текст для защиты диплома.
+Презентация предзащиты  /Users/d.yukachev/CLionProjects/HSEDiploma/presentation/YukachevDmitriy.pptx
+Твои коментарии /Users/d.yukachev/CLionProjects/HSEDiploma/presentation/presentation_draft.md (сейчас я от тебя буду хотеть такого же файлв с описанием того что стоит поменять, а поменяю я сам)
+Текст выступления /Users/d.yukachev/CLionProjects/HSEDiploma/presentation/speech.md
+
+Также самое важное на чем должна базироваться новое выступление это диплом: /Users/d.yukachev/CLionProjects/HSEDiploma/diploma_official/thesis/main.pdf (тех версия /Users/d.yukachev/CLionProjects/HSEDiploma/diploma_official/thesis/main.tex)
+
+Дополнительно потом попытаемся предугатать вопросы жюри и подготовить на них ответы
